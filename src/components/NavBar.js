@@ -1,6 +1,6 @@
 import React from 'react';
-import {Nav, NavLink, Bars, NavMenu } from './NavBarElements';
-import Logo from '../images/robot.svg'
+import {Nav, NavLink, Bars, NavMenu } from '../Styles/NavBarElements';
+
 
 const NavBar = () =>{
 
@@ -8,22 +8,22 @@ const NavBar = () =>{
         <>
             <Nav>
                 <NavLink to="/" >
-                    <img width="60" height="60" src={Logo} alt='logo' />
+                    <a>AR</a>
                 </NavLink>
 
                 <Bars />
                 <NavMenu>
                     <NavLink to="/" activeStyle>
-                        Home
+                        INICIO
                     </NavLink>
                     <NavLink to="/aboutus" activeStyle>
-                        About Us
+                        ACERCA DE NOSOTROS
                     </NavLink>
                     <NavLink to="/categories" activeStyle>
-                        Categories
+                        CATEGORIAS
                     </NavLink>
                     <NavLink to="/contact" activeStyle>
-                        Contact
+                        CONTACTO
                     </NavLink>
                 </NavMenu>
 

@@ -8,21 +8,29 @@ import AboutUs from './components/Pages/AboutUs'
 import Categories from './components/Pages/Categories'
 import Contact from './components/Pages/Contact'
 
+import Page from './components/Page'
+import {FooterF} from './components/Footer'
+
 export const App = () => {
 
 
   return (
     
+    <>
     <Router>
       <NavBar />
+      
       <Switch>
         <Route path="/" exact component={Home}/>
         <Route path="/aboutus" component={AboutUs}/>
         <Route path="/categories" component={Categories}/>
         <Route path="/contact" component={Contact}/>
       </Switch>
+      
     </Router>
+    <FooterF/>
 
+    </>
   );
 }
 
